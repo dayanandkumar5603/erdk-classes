@@ -1,0 +1,97 @@
+<section class="topbar">
+  <div class="row topbar-row">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <ul class="topbarmenu2">
+        <li class="menu-item"><a routerLink="/about">ERDK-Classes</a></li>
+        <li class="menu-item"><a routerLink="/downloads">Downloads</a></li>
+        <li class="menu-item"><a routerLink="/fee">Online Fee Payment</a></li>
+        <li class="menu-item"><a [routerLink]="['/batches']">Batches</a></li>
+        <li class="menu-item"><a routerLink="/contact-us">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <ul class="topbarmenu2 right-menu-topbar">
+        <li class="menu-item"><a routerLink="mission">Our Mission</a></li>
+        <li class="menu-item"><a routerLink="vission">Our Vission</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- topbar end -->
+<header class="full">
+  <div class="row col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+      <h1 class="webtitle"><a routerLink="/">The ERDK.Classes</a></h1>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 column">
+      <div class="coaching_search">
+          <div class="wrapper">
+            <marquee behavior="scroll" direction="right">
+              <h5 class="marquee">
+                <strong>We provide the tools to climb peak of the mountain.</strong>
+              </h5></marquee>
+          </div>
+        <form id="custom-search-form" class="form-search form-horizontal pull-right">
+          <div class="input-append span12">
+            <input type="text" class="search-query srchcls" placeholder="Search">
+            <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"> </i></button>
+          </div>
+        </form>
+      </div>
+      <div class="full erdk_menu">
+        <div id="menuzord" class="menuzord red menuzord-responsive column"><span (click)="expandFunction()" class="showhide"
+            ><em></em><em></em><em></em></span>
+          <ul id="menu-main-menu" class="menuzord-menu menuzord-right menuzord-indented scrollable">
+            <li id="menu-item-172" class="header-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-172"><a
+                href="javascript:void(0)">About<span class="indicator" (click)="submenuExpandFunction('About')"><i class="fa fa-angle-down"></i></span></a>
+              <ul class="dropdown dropdown-open">
+                <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a
+                  routerLink="/about/organization">Organization</a></li>
+                <li id="menu-item-573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-573"><a
+                  routerLink="/about/why-erdk">Why ER D.K.Classes</a></li>
+                <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a
+                  routerLink="/about/about-erdk">About ER D.K.Classes</a></li>
+                <li id="menu-item-574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-574"><a
+                  routerLink="/about/director-msg">Director’s Message</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a routerLink="/admission">Admission</a></li>
+            <li id="menu-item-265" class="header-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-265"><a
+                href="javascript:void(0)">Academics<span class="indicator" (click)="submenuExpandFunction('Academics')"><i class="fa fa-angle-down"></i></span></a>
+              <ul class="dropdown dropdown-open">
+                <li id="menu-item-245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-245"><a
+                    [routerLink]="['/batches/ten']">Matriculations</a></li>
+                <li id="menu-item-260" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-260"><a
+                    [routerLink]="['/batches/eleven']">Class 11</a></li>
+                <li id="menu-item-261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-261"><a
+                    [routerLink]="['/batches/twelve']">Class 12</a></li>
+                <li id="menu-item-261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-261"><a
+                    [routerLink]="['/batches/competition']">Competitive Classes</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a routerLink="/contact-us">Enquiry</a></li>
+            <li id="menu-item-59" class="header-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-59"><a
+                href="javascript:void(0)">Downloads<span class="indicator" (click)="submenuExpandFunction('Downloads')"><i class="fa fa-angle-down"></i></span></a>
+              <ul class="dropdown dropdown-open">
+                <li id="menu-item-1399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1399"><a
+                    routerLink="/downloads/ten">Class 10th Notes</a></li>
+                <li id="menu-item-1893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1893"><a
+                  routerLink="/downloads/eleven">Class 11th Notes</a></li>
+                <li id="menu-item-1901" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1901"><a
+                  routerLink="/downloads/twelve">Class 12th Notes</a></li>
+                <li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a
+                  routerLink="/downloads/competition">Competitive Classes Notes</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-3065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3065"><a
+              routerLink="/gallary">Gallery</a></li>
+            <li id="menu-item-4250" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4250"><a
+              routerLink="/achievements">Achievements</a></li>
+            <li class="scrollable-fix"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
